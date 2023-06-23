@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "test1",
+      "setup": "make compile",
+      "run": "java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-method miTest.AppTest#testSuma",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "test2",
+      "setup": "",
+      "run": "java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-method miTest.AppTest#testResta",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "test3",
+      "setup": "",
+      "run": "java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-method miTest.AppTest#testMultiplica",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "test4",
+      "setup": "",
+      "run": "java -jar lib/junit-platform-console-standalone-1.5.2.jar -class-path build --select-method miTest.AppTest#testDivide",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    },
+    {
+      "name": "test5",
+      "setup": "make compile",
+      "run": "make run",
+      "input": "12\r\n4\r\n",
+      "output": "Calculadora aritmetica\r\n======================\r\nIntroduce el primer operando:Introduce el segundo operando:12+4=16\r\n12-4=8\r\n12*4=48\r\n12/4=3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 20
+    }
+  ]
+}
